@@ -1,0 +1,35 @@
+body {
+ background-color: #000;
+}
+
+h1 {
+ font-size: 45px;
+ color: red;
+}
+
+.header {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 50px;
+}
+
+.underline {
+ width: 70%;
+ background-color: white;
+ height: 2px;
+}
+
+.header img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+#card-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+}
