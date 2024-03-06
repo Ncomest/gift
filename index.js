@@ -1,48 +1,60 @@
-const cardContainer = document.getElementById("card-container");
-
-const imageUrl = "./image/coffee_img.svg";
-const overImageUrl = "./image/coffee_img_over.svg"; // Путь к изображению coffee_img_over.svg
-
-const imageStyles = {
- height: "100px",
- width: "100px",
- margin: "5px",
+const loginUsers = {
+ username: "user",
+ password: "123",
 };
 
-// Создаем массив элементов
-const imgElements = [];
+// Проверяем какие данные введены при авторизации, if else
+function login() {
+ const userInput = document.getElementById("username").value;
+ const passInput = document.getElementById("password").value;
 
-for (let i = 0; i < 20; i++) {
- const imgElement = document.createElement("img");
- imgElement.src = imageUrl;
- imgElement.alt = "image" + (i + 1);
-
- Object.assign(imgElement.style, imageStyles);
-
- cardContainer.appendChild(imgElement);
-
- imgElements.push(imgElement);
+ if (userInput === loginUsers.username && passInput === loginUsers.password) {
+  alert("success");
+  sessionStorage.setItem("authorization", "true");
+  window.location.href = "home.html";
+ } else {
+  alert("wrong login or password");
+ }
 }
 
-// Заменяем последний и предпоследний элементы на coffee_img_over.svg
-imgElements[19].src = overImageUrl;
-// imgElements[18].src = overImageUrl;
-// imgElements[17].src = overImageUrl;
-// imgElements[16].src = overImageUrl;
-// imgElements[15].src = overImageUrl;
-// imgElements[14].src = overImageUrl;
-// imgElements[13].src = overImageUrl;
-// imgElements[12].src = overImageUrl;
-// imgElements[11].src = overImageUrl;
-// imgElements[10].src = overImageUrl;
-// imgElements[9].src = overImageUrl;
-// imgElements[8].src = overImageUrl;
-// imgElements[7].src = overImageUrl;
-// imgElements[6].src = overImageUrl;
-// imgElements[5].src = overImageUrl;
-// imgElements[4].src = overImageUrl;
-// imgElements[3].src = overImageUrl;
-// imgElements[2].src = overImageUrl;
-// imgElements[1].src = overImageUrl;
-// imgElements[0].src = overImageUrl;
+// Добавляем кнопку Enter
+function handlePressEnter(e) {
+ if (e.keyCode === 13) {
+  login();
+ }
+}
 
+const usernameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
+usernameInput.addEventListener("keypress", handlePressEnter);
+passwordInput.addEventListener("keypress", handlePressEnter);
+
+// document.addEventListener("DOMContentLoaded", function () {
+//  const loggedIn = sessionStorage.getItem("loggedIn");
+
+//  // Если уже вошли, перенаправляем на home.html
+//  if (loggedIn === "true") {
+//   window.location.href = "home.html";
+//  }
+
+//  const loginForm = document.getElementById("loginForm");
+
+//  loginForm.addEventListener("submit", function (event) {
+//   event.preventDefault();
+
+//   const usernameInput = document.getElementById("username").value;
+//   const passwordInput = document.getElementById("password").value;
+
+//   if (
+//    usernameInput === validCredentials.username &&
+//    passwordInput === validCredentials.password
+//   ) {
+//    // В случае успешного входа, устанавливаем значение "loggedIn" в sessionStorage
+//    sessionStorage.setItem("loggedIn", "true");
+//    // Перенаправляем на home.html
+//    window.location.href = "home.html";
+//   } else {
+//    alert("Invalid username or password. Please try again.");
+//   }
+//  });
+// });

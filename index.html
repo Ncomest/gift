@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./style.css" />
+  <script defer src="index.js"></script>
  </head>
- <body>
-  <section class="header">
-   <h1>Поздравляю!</h1>
-   <span class="underline"></span>
-   <p>Этот купон дает вам возможность</p>
-  </section>
-  <section class="main">
-   <div id="card-container"></div>
-  </section>
+ <body class="login-main">
+  <h2>Вход</h2>
+  <form id="loginForm">
+   <label for="username">Имя: </label>
+   <input type="text" id="username" />
+   <br />
+   <label for="password">Пароль: </label>
+   <input type="password" id="password" />
+   <br />
+   <button type="button" onclick="login()">Войти</button>
+  </form>
  </body>
- <script src="./index.js"></script>
+ <!-- <script src="./index.js"></script> -->
 </html>

@@ -1,5 +1,6 @@
 body {
- background-color: #000;
+ background-color: #191729;
+ color: white;
 }
 
 h1 {
@@ -32,4 +33,21 @@ h1 {
  align-items: center;
  justify-content: center;
  flex-wrap: wrap;
+}
+
+.login-main {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ height: 100vh;
+}
+
+#loginForm {
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ padding: 30px;
+ gap: 10px;
+ border: 1px solid;
 }
