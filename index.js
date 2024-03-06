@@ -1,6 +1,6 @@
 const loginUsers = {
- username: "user",
- password: "123",
+ username: "Наташа",
+ password: "2703",
 };
 
 // Проверяем какие данные введены при авторизации, if else
@@ -9,11 +9,12 @@ function login() {
  const passInput = document.getElementById("password").value;
 
  if (userInput === loginUsers.username && passInput === loginUsers.password) {
-  alert("success");
   sessionStorage.setItem("authorization", "true");
   window.location.href = "home.html";
  } else {
-  alert("wrong login or password");
+  alert(
+   "Ооопс, видимо имя или пароль были введены не верно, попробуйте еще раз!"
+  );
  }
 }
 

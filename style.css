@@ -1,10 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+ font-family: "Pacifico", cursive;
+ font-weight: 400;
+ font-style: normal;
+}
+
 body {
+ position: relative;
  background-color: #191729;
  color: white;
 }
 
 h1 {
- font-size: 45px;
+ font-size: 65px;
  color: red;
 }
 
@@ -13,7 +22,31 @@ h1 {
  justify-content: center;
  align-items: center;
  flex-direction: column;
- margin: 50px;
+ margin: 0px;
+}
+.serp {
+ position: absolute;
+ top: 0;
+ width: 140px;
+}
+
+.left {
+ transform: rotate(145deg);
+ left: 0;
+}
+.right {
+ transform: rotate(-145deg);
+ right: 0;
+}
+
+.header p {
+ font-size: 30px;
+ text-align: center;
+}
+
+.text-common span {
+ color: red;
+ text-transform: uppercase;
 }
 
 .underline {
@@ -22,7 +55,7 @@ h1 {
  height: 2px;
 }
 
-.header img {
+.main img {
  width: 100%;
  height: 100%;
  object-fit: cover;
@@ -33,6 +66,20 @@ h1 {
  align-items: center;
  justify-content: center;
  flex-wrap: wrap;
+ margin: auto;
+ max-width: 900px;
+}
+
+button {
+ box-shadow: 2px 4px 4px 2px rgb(17, 2, 115);
+ padding: 5px 20px;
+ background-color: cornflowerblue;
+ border-radius: 5px;
+ border: none;
+}
+
+button:hover {
+ background-color: rgb(116, 159, 239);
 }
 
 .login-main {
@@ -48,6 +95,22 @@ h1 {
  flex-direction: column;
  align-items: start;
  padding: 30px;
- gap: 10px;
+ gap: 15px;
  border: 1px solid;
+ border-radius: 5px;
+}
+
+#loginForm input {
+ padding: 5px;
+ border-radius: 5px;
+ outline: none;
+}
+@media (max-width: 375px) {
+ h1 {
+  font-size: 44px;
+ }
+
+ .header p {
+  font-size: 24px;
+ }
 }
