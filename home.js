@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Заменяем последний и предпоследний элементы на coffee_img_over.svg
-  // imgElements[0].src = overImageUrl;
+   imgElements[0].src = overImageUrl;
   // imgElements[0].src = overImageUrl;
   // imgElements[1].src = overImageUrl;
   // imgElements[2].src = overImageUrl;
