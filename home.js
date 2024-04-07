@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
    imgElements[5].src = overImageUrl;
    imgElements[6].src = overImageUrl;
    imgElements[7].src = overImageUrl;
-  // imgElements[8].src = overImageUrl;
+  imgElements[8].src = overImageUrl;
   // imgElements[9].src = overImageUrl;
   // imgElements[10].src = overImageUrl;
   // imgElements[11].src = overImageUrl;
