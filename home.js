@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
    imgElements[7].src = overImageUrl;
   imgElements[8].src = overImageUrl;
    imgElements[9].src = overImageUrl;
-  // imgElements[10].src = overImageUrl;
+   imgElements[10].src = overImageUrl;
   // imgElements[11].src = overImageUrl;
   // imgElements[12].src = overImageUrl;
   // imgElements[13].src = overImageUrl;
