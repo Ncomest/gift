@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
    imgElements[14].src = overImageUrl;
    imgElements[15].src = overImageUrl;
    imgElements[16].src = overImageUrl;
-  // imgElements[17].src = overImageUrl;
-  // imgElements[18].src = overImageUrl;
+   imgElements[17].src = overImageUrl;
+   imgElements[18].src = overImageUrl;
   // imgElements[19].src = overImageUrl;
  }
 });
